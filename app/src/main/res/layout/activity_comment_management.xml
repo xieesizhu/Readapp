@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!-- 状态筛选栏 -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#EEEEEE"
+            android:padding="8dp">
+
+        <Button
+                android:id="@+id/btn_all"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="全部"
+                android:textSize="12sp"/>
+
+        <Button
+                android:id="@+id/btn_pending"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="待审核"
+                android:textSize="12sp"/>
+
+        <Button
+                android:id="@+id/btn_reported"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="被举报"
+                android:textSize="12sp"/>
+
+        <Button
+                android:id="@+id/btn_blocked"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="已屏蔽"
+                android:textSize="12sp"/>
+    </LinearLayout>
+
+    <!-- 搜索栏 -->
+    <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="输入用户或小说名搜索"
+            android:padding="12dp"
+            />
+
+    <!-- 评论列表 -->
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_comments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"/>
+</LinearLayout>

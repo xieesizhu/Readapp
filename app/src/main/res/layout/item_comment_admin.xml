@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <!-- 状态栏 -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@color/gray"/>
+
+            <TextView
+                    android:id="@+id/tv_user"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:layout_marginStart="8dp"/>
+
+            <TextView
+                    android:id="@+id/tv_book"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp"/>
+        </LinearLayout>
+
+        <!-- 时间 -->
+        <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#666"
+                android:layout_marginTop="4dp"/>
+
+        <!-- 评论内容 -->
+        <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"/>
+
+        <!-- 举报原因 -->
+        <TextView
+                android:id="@+id/tv_report_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#F44336"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"/>
+
+        <!-- 操作按钮 -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_marginTop="12dp">
+
+            <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="删除"
+                    android:textSize="12sp"
+                    android:backgroundTint="#F44336"
+                    android:layout_marginEnd="8dp"/>
+
+            <Button
+                    android:id="@+id/btn_block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="屏蔽"
+                    android:textSize="12sp"
+                    android:backgroundTint="#616161"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="通过审核"
+                    android:textSize="12sp"
+                    android:id="@+id/btn_pass" android:backgroundTint="@color/colorPrimary" android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

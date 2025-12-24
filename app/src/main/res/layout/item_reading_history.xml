@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <!-- 书籍信息 -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/iv_cover"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="书籍标题"/>
+
+                <TextView
+                        android:id="@+id/tv_author"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="#666"
+                        tools:text="作者：某某某"/>
+
+                <TextView
+                        android:id="@+id/tv_chapter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="#666"
+                        tools:text="当前章节：第10章"/>
+
+                <TextView
+                        android:id="@+id/tv_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="#666"
+                        tools:text="当前章节阅读进度：50%"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 操作按钮 -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+            <Button
+                    android:id="@+id/btn_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:text="查看小说"
+                    android:backgroundTint="#2196F3"
+                    android:textColor="@color/white"/>
+
+            <Button
+                    android:id="@+id/btn_continue"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="4dp"
+                    android:text="继续阅读"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="@color/white"/>
+
+            <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:text="删除记录"
+                    android:backgroundTint="#F44336"
+                    android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

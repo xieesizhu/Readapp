@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!-- 头像上传 -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+            <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_default_avatar"/>
+
+            <Button
+                    android:id="@+id/btn_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传头像"
+                    android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- 表单字段 -->
+        <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="用户名"
+                android:layout_marginTop="16dp"/>
+
+        <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:layout_marginTop="8dp"/>
+        <EditText
+                android:id="@+id/et_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="年龄"
+                android:inputType="textPersonName"
+                android:layout_marginTop="8dp"/>
+
+        <EditText
+                android:id="@+id/et_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="安全问题"
+                android:layout_marginTop="8dp"/>
+
+        <EditText
+                android:id="@+id/et_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="安全答案"
+                android:layout_marginTop="8dp"/>
+
+        <!-- 提交按钮 -->
+        <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="提交"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+    <!-- 顶部操作栏 -->
+    <LinearLayout
+            android:id="@+id/top_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+        <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"/>
+
+        <Button
+                android:id="@+id/btn_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上一章"
+                android:layout_marginStart="16dp"/>
+
+        <TextView
+                android:id="@+id/tv_chapter_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <!-- 阅读内容区域 -->
+    <ScrollView
+            android:id="@+id/sv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_toolbar"
+            android:layout_above="@id/bottom_toolbar"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+        <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.2"/>
+    </ScrollView>
+
+    <!-- 底部操作栏 -->
+    <LinearLayout
+            android:id="@+id/bottom_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下一章"/>
+
+        <Button
+                android:id="@+id/btn_all_chapters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部章节"
+                android:layout_marginStart="16dp"/>
+        <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编辑"
+                android:visibility="gone" android:layout_marginStart="16dp"/>
+    </LinearLayout>
+</RelativeLayout>

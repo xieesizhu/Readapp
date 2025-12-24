@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="4dp">
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal" app:cardBackgroundColor="#6BFFFFFF">
+        <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_books" android:layout_gravity="center_horizontal"/>
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#80000000"
+                android:padding="4dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+    </androidx.cardview.widget.CardView>  <!-- 固定宽度保证居中 -->
+    android:layout_height="200dp"
+    android:layout_gravity="center"  <!-- 关键居中属性 --><![CDATA[
+    android:layout_margin="8dp">
+
+
+    ]]>
+</FrameLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#F5F5F5">
+
+    <!-- 标题栏 -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="阅读记录"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="@color/white"/>
+
+    <!-- 列表 -->
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <!-- 空状态 -->
+    <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="暂无阅读记录"
+            android:gravity="center"
+            android:visibility="gone"/>
+</LinearLayout>

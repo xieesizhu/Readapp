@@ -1,0 +1,89 @@
+<!-- res/layout/activity_add_edit_book.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!-- 封面预览和选择 -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+            <ImageView
+                    android:id="@+id/iv_cover"
+                    android:layout_width="120dp"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_books"/>
+
+            <Button
+                    android:id="@+id/btn_select_cover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择封面"
+                    android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- 表单字段 -->
+        <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="书名"
+                android:layout_marginTop="16dp"/>
+
+        <EditText
+                android:id="@+id/et_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="作者"
+                android:layout_marginTop="8dp"/>
+
+        <Spinner
+                android:id="@+id/sp_category"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"/>
+
+        <TextView
+                android:id="@+id/tv_file_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="书籍文件"
+                android:layout_marginTop="8dp"/>
+
+        <Button
+                android:id="@+id/btn_select_file"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="选择书籍文件"
+                android:layout_marginTop="4dp"/>
+
+        <EditText
+                android:id="@+id/et_description"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="top"
+                android:hint="书籍描述"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="8dp"/>
+
+        <!-- 操作按钮 -->
+        <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="保存"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#2196F3"
+                android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</ScrollView>

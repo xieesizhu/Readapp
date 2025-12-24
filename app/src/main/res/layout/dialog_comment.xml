@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发表您的评论"
+            android:textSize="16sp"/>
+
+    <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="8dp"
+            android:hint="请输入评论内容（至少10个字）"
+            android:inputType="textMultiLine"
+            android:gravity="top"/>
+
+</LinearLayout>

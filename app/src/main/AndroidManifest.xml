@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.readapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ReadingStatsActivity">
+        </activity>
+        <activity android:name=".ReadingHistoryActivity">
+        </activity>
+        <activity android:name=".BookListActivity">
+        </activity>
+        <activity android:name=".CategoryActivity">
+        </activity>
+        <activity android:name=".SearchActivity">
+        </activity>
+        <activity android:name=".BookDetailActivity">
+        </activity>
+        <activity android:name=".AddEditBookActivity">
+        </activity>
+        <activity android:name=".ReadActivity">
+        </activity>
+        <activity android:name=".ChapterActivity">
+        </activity>
+        <activity android:name=".CommentManagementActivity">
+        </activity>
+        <activity android:name=".BookManagementActivity">
+        </activity>
+        <activity android:name=".UserManagementActivity">
+        </activity>
+        <activity android:name=".AdminManagement.UserManagementActivity">
+        </activity>
+        <activity
+                android:name=".AdminActivity"
+                android:label="后台">
+        </activity>
+        <activity android:name=".ChangePasswordActivity">
+        </activity>
+        <activity
+                android:name=".ForgetActivity"
+                android:label="@string/app_name">
+        </activity>
+        <activity
+                android:name=".WelcomeActivity"
+                android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".MainActivity"
+                android:label="@string/app_name">
+        </activity>
+        <activity
+                android:name=".LoginActivity"
+                android:label="@string/app_name">
+        </activity>
+        <activity
+                android:name=".RegActivity"
+                android:label="@string/app_name">
+        </activity>
+        <activity android:name=".UserFormActivity"/>
+    </application>
+
+</manifest>

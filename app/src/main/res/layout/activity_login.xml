@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--登录界面,用LinearLayout-->
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" android:background="@drawable/loginbg">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp">
+
+        <ImageView
+                android:id="@+id/symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+
+        <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/qq"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="@string/tv_appname"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <!--输入框-->
+    <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#000000"
+            android:layout_marginTop="60dp"
+            android:hint="@string/et_account"
+            android:textSize="20sp"/>
+    <!--输入框-->
+    <EditText
+            android:id="@+id/et_psw"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="@string/et_password"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="10dp"
+            android:textColorHint="#000000"
+            android:textSize="20sp"
+            android:inputType="textPassword"/>
+    <!--按钮-->
+    <Button
+            android:id="@+id/btn_login"
+            android:text="@string/bt_login"
+            android:background="#1E90FF"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="77dp">
+        <TextView
+                android:id="@+id/tv_register"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_register" android:textSize="20sp" tools:ignore="RelativeOverlap"/>
+        <TextView
+                android:text="@string/tv_visitor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_guest"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp" android:layout_alignStart="@+id/tv_register"/>
+        <TextView
+                android:text="@string/tv_forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_forget"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp" android:layout_alignStart="@id/checkBox"
+                android:layout_below="@id/checkBox"
+                android:layout_alignTop="@id/tv_guest"
+                android:layout_alignEnd="@+id/checkBox"
+                android:layout_toRightOf="@id/checkBox" android:gravity="right"/>
+        <CheckBox
+                android:text="@string/cb_rem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/checkBox" android:checked="false"
+                android:textSize="20sp"/>
+        <!--layout_weight="1" layout_width="0dp"实现均分效果-->
+    </RelativeLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:textColor="#FF0000"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="登录即代表阅读并同意服务条款"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

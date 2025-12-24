@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="8dp">
+
+    <!-- 搜索栏 -->
+    <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="输入用户名或ID搜索"/>
+
+    <!-- 添加用户按钮 -->
+    <Button
+            android:id="@+id/btn_add_user"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="添加新用户"
+            android:layout_marginVertical="8dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"/>
+
+    <!-- 用户列表 -->
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_users"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</LinearLayout>

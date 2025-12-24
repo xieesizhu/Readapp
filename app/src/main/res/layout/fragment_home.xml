@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <!-- 功能导航 -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+            <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="搜索"/>
+
+            <Button
+                    android:id="@+id/btn_category"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="分类"
+                    android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- 精选好书 -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="精选好书"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_featured"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent" android:layout_marginTop="8dp"/>
+
+        <!-- 智能推荐 -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="智能推荐"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="随机推荐"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_random"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp" android:id="@+id/textView"/>
+    </LinearLayout>
+</ScrollView>

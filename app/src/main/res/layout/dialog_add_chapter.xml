@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <EditText
+            android:id="@+id/et_chapter_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="章节序号"
+            android:inputType="number"/>
+
+    <EditText
+            android:id="@+id/et_chapter_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="章节标题"
+            android:layout_marginTop="8dp"/>
+
+    <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="章节内容"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="8dp"/>
+
+</LinearLayout>
